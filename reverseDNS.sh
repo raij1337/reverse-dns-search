@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$1" == "" ]
 then
-	echo "REVERSE DNS SEARCH"
+	echo "REVERSE DNS SEARCH - by RAIJ"
 	echo "USE: $0 <site.com>"
 else
 	ip=$(host $1 | grep "has address" | cut -d " " -f 4)
